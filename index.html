@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw Portfolio | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/logo-web.jpg" alt="Portfolio logo">
+    </a>
+    <nav class="nav" aria-label="Main menu">
+      <a class="active" href="index.html">Home</a>
+      <a href="project.html">Project</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-bg" src="assets/banner-web.jpg" alt="그리고 싶은 걸 그립니다 배너">
+      <div class="hero-card">
+        <p class="eyebrow">Drawing Portfolio</p>
+        <h1>그리고 싶은 걸,<br>그립니다.</h1>
+        <p>정해진 주제도, 틀도 없이 마음이 이끄는 대로 자유롭게 그린 작업을 모았습니다.</p>
+        <a class="pill-button" href="project.html">프로젝트 보기</a>
+      </div>
+    </section>
+
+    <section class="structure-section" aria-labelledby="structure-title">
+      <div class="section-label">Site map</div>
+      <h2 id="structure-title">전체 구조도</h2>
+      <div class="site-map">
+        <div class="map-node root">Portfolio</div>
+        <div class="map-branch">
+          <a class="map-node" href="index.html">Home<br><span>메인 소개</span></a>
+          <a class="map-node" href="project.html">Project<br><span>작업 갤러리</span></a>
+          <a class="map-node" href="#about">About<br><span>작업 방향</span></a>
+          <a class="map-node" href="#contact">Contact<br><span>문의 안내</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="intro-grid">
+      <div>
+        <div class="section-label">About</div>
+        <h2>자유로운 시도와 즐거운 과정을 담은 페이지</h2>
+      </div>
+      <p>
+        이 포트폴리오는 일러스트 작업의 분위기와 진행 과정을 깔끔하게 보여주기 위해 제작했습니다.
+        메인 페이지에서는 전체 콘셉트와 대표 이미지를 먼저 보여주고, 프로젝트 페이지에서는 작업 이미지를
+        한 장씩 넘기며 볼 수 있도록 구성했습니다.
+      </p>
+    </section>
+
+    <section class="project-preview" aria-labelledby="preview-title">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Featured Project</div>
+          <h2 id="preview-title">진행 프로젝트 모아보기</h2>
+        </div>
+        <a href="project.html">전체 보기</a>
+      </div>
+      <div class="preview-rail" aria-label="Project image preview">
+        <article>
+          <button class="image-open" type="button" data-full="assets/project-1.jpg" data-title="프로젝트 1">
+            <img src="assets/project-1.jpg" alt="프로젝트 미리보기 이미지 1">
+          </button>
+          <span>프로젝트 1</span>
+        </article>
+        <article>
+          <button class="image-open" type="button" data-full="assets/project-2.jpg" data-title="프로젝트 2">
+            <img src="assets/project-2.jpg" alt="프로젝트 미리보기 이미지 2">
+          </button>
+          <span>프로젝트 2</span>
+        </article>
+        <article>
+          <button class="image-open" type="button" data-full="assets/project-3.jpg" data-title="프로젝트 3">
+            <img src="assets/project-3.jpg" alt="프로젝트 미리보기 이미지 3">
+          </button>
+          <span>프로젝트 3</span>
+        </article>
+        <article>
+          <button class="image-open" type="button" data-full="assets/project-4.jpg" data-title="프로젝트 4">
+            <img src="assets/project-4.jpg" alt="프로젝트 미리보기 이미지 4">
+          </button>
+          <span>프로젝트 4</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <h2>함께 보고 싶은 작업이 있다면</h2>
+      <p>프로젝트 페이지에서 전체 이미지 흐름을 확인할 수 있습니다.</p>
+      <a class="text-link" href="project.html">Project page</a>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-backdrop" type="button" aria-label="확대 이미지 닫기"></button>
+    <figure class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="닫기">×</button>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

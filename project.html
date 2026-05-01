@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw Portfolio | Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/logo-web.jpg" alt="Portfolio logo">
+    </a>
+    <nav class="nav" aria-label="Main menu">
+      <a href="index.html">Home</a>
+      <a class="active" href="project.html">Project</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="section-label">Project Archive</div>
+      <h1>Project</h1>
+      <p>
+        정해진 형식보다 떠오르는 장면과 감정을 따라가는 드로잉 프로젝트입니다.
+        부드러운 색감과 손그림 같은 분위기 속에서 자유로운 시도와 즐거운 과정을 담았습니다.
+      </p>
+    </section>
+
+    <section class="gallery-wrap" aria-label="Project image gallery">
+      <div class="gallery-intro">
+        <h2>작업 이미지</h2>
+        <p>그림의 분위기, 과정, 완성 이미지를 카드처럼 넘겨 보세요.</p>
+      </div>
+      <div class="gallery-scroll">
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-1.jpg" data-title="프로젝트 1">
+            <img src="assets/project-1.jpg" alt="프로젝트 이미지 1">
+          </button>
+          <figcaption>프로젝트 1</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-2.jpg" data-title="프로젝트 2">
+            <img src="assets/project-2.jpg" alt="프로젝트 이미지 2">
+          </button>
+          <figcaption>프로젝트 2</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-3.jpg" data-title="프로젝트 3">
+            <img src="assets/project-3.jpg" alt="프로젝트 이미지 3">
+          </button>
+          <figcaption>프로젝트 3</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-4.jpg" data-title="프로젝트 4">
+            <img src="assets/project-4.jpg" alt="프로젝트 이미지 4">
+          </button>
+          <figcaption>프로젝트 4</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-5.jpg" data-title="프로젝트 5">
+            <img src="assets/project-5.jpg" alt="프로젝트 이미지 5">
+          </button>
+          <figcaption>프로젝트 5</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-6.jpg" data-title="프로젝트 6">
+            <img src="assets/project-6.jpg" alt="프로젝트 이미지 6">
+          </button>
+          <figcaption>프로젝트 6</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-7.jpg" data-title="프로젝트 7">
+            <img src="assets/project-7.jpg" alt="프로젝트 이미지 7">
+          </button>
+          <figcaption>프로젝트 7</figcaption>
+        </figure>
+        <figure>
+          <button class="image-open" type="button" data-full="assets/project-8.jpg" data-title="프로젝트 8">
+            <img src="assets/project-8.jpg" alt="프로젝트 이미지 8">
+          </button>
+          <figcaption>프로젝트 8</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-note">
+      <div>
+        <div class="section-label">Overview</div>
+        <h2>프로젝트 정리</h2>
+      </div>
+      <p>
+        이 프로젝트는 그리고 싶은 순간을 놓치지 않고 화면에 옮기는 데서 출발합니다.
+        완벽한 완성보다 다양한 시도, 편안한 선, 따뜻한 색의 조합을 통해 그림을 즐기는 태도를 보여줍니다.
+      </p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-backdrop" type="button" aria-label="확대 이미지 닫기"></button>
+    <figure class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="닫기">×</button>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
